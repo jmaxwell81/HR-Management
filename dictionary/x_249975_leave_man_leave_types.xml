@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Leave Types" max_length="40" name="x_249975_leave_man_leave_types" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Days" max_length="40" name="days" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Leave Type Cyrillic" max_length="60" name="leave_type_cyrillic" type="string"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Order" max_length="40" name="order" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Parent" max_length="32" name="parent" reference="x_249975_leave_man_leave_types" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Required Approval" max_length="40" name="required_approval" type="boolean"/>
+        <index name="index">
+            <element name="parent"/>
+        </index>
+    </element>
+</database>

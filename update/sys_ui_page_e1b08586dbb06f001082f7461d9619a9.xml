@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_249975_leave_man_Generate Leave Report Mail.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g:ui_form>	
+		
+		<html><head></head><body><p><strong>Generate Leave Requests Report </strong><br>
+		  
+		  </br>Dear user, the report will contain only attachments of leave requests on status 'Closed Completed'</p>
+			 <p>Please, select creation date range of leave requests:</p>
+		   <div></div>
+		  </body></html>
+
+	<p> Leave requests between &#160; <g:ui_date name="startDate" table='' field=''/>  &#160; and  &#160; <g:ui_date name="endDate" table='' field=''/> </p>
+		
+		<!-- <g:dialog_buttons_ok_cancel ok="return true" /> -->
+		<button type="submit" value="Submit">Run </button>
+		
+	</g:ui_form>
+</j:jelly>]]></html>
+        <name>Generate Leave Report Mail</name>
+        <processing_script><![CDATA[var leaveReqIDs = [];
+
+var dtStart = startDate + ' 00:00:00';
+var dtEnd = endDate+ ' 00:00:00';
+
+var systemDefaultDateFormat = gs.getProperty('glide.sys.date_format');
+var gdStartDate = new GlideDateTime(dtStart);
+gdStartDate.setValueUTC(dtStart, systemDefaultDateFormat);
+var gdEndDate = new GlideDateTime(dtEnd);
+gdEndDate.setValueUTC(dtEnd, systemDefaultDateFormat);
+
+ 	
+var gdTime = new GlideDateTime();
+var currentDate = gdTime.getDisplayValue();
+
+var sourceTable = 'x_249975_leave_man_leave_request';
+var targetTable = 'x_249975_leave_man_mail_reports';
+
+var grMailRecord = new GlideRecord(targetTable);
+grMailRecord.initialize();
+grMailRecord.name = 'Mail Report - ' + gs.getUserDisplayName() + ' - '+ currentDate ;
+var mailRecordId = grMailRecord.insert();
+
+
+//var string="date_start>javascript:gs.dateGenerate('startDateReplace','end')^state=3^date_end<javascript:gs.dateGenerate('endDateReplace','start')";
+//var string = "sys_created_onBETWEENjavascript:gs.dateGenerate('startDateReplace')@javascript:gs.dateGenerate('endDateReplace')";
+//var string =" sys_created_onBETWEENjavascript:gs.dateGenerate('startDateReplace')@javascript:gs.dateGenerate('endDateReplace')^state=3";
+var string = "date_start>javascript:gs.dateGenerate('startDateReplace','end')^date_end<javascript:gs.dateGenerate('endDateReplace','start')^state=3";
+string = string.replace('startDateReplace',gdStartDate);
+string = string.replace('endDateReplace', gdEndDate.toString().replace('00:00:00','23:59:59'));
+var grLeaveReqs = new GlideRecord(sourceTable);
+grLeaveReqs.addEncodedQuery(string);
+grLeaveReqs.query();
+
+while(grLeaveReqs.next()) {
+	GlideSysAttachment.copy(sourceTable, grLeaveReqs.getUniqueValue(), targetTable, mailRecordId);
+	leaveReqIDs.push(grLeaveReqs.getUniqueValue());
+}
+grMailRecord.update();
+
+var gaAttachmentCount = new GlideAggregate('sys_attachment');
+gaAttachmentCount.addQuery('table_sys_id', 'IN', leaveReqIDs.toString());
+gaAttachmentCount.addAggregate('COUNT');
+gaAttachmentCount.query();
+
+if(gaAttachmentCount.next()) {
+	var count = parseInt(gaAttachmentCount.getAggregate('COUNT'));
+	var prp = parseInt(gs.getProperty('glide.email.outbound.max_attachment_count'));
+	if(count > prp)
+	gs.addInfoMessage('There are more than 30 attachments and you will not receive all of them. Please contact your system administrator.');
+}]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>t.lidanski</sys_created_by>
+        <sys_created_on>2018-09-28 11:14:51</sys_created_on>
+        <sys_id>e1b08586dbb06f001082f7461d9619a9</sys_id>
+        <sys_mod_count>117</sys_mod_count>
+        <sys_name>Generate Leave Report Mail</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_ui_page_e1b08586dbb06f001082f7461d9619a9</sys_update_name>
+        <sys_updated_by>p.nakov</sys_updated_by>
+        <sys_updated_on>2018-11-05 12:33:42</sys_updated_on>
+    </sys_ui_page>
+</record_update>

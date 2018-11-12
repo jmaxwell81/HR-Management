@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>LMGetCEOname</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+          // Add your code here
+	var grCEO = new GlideRecord('sys_user');
+	if(grCEO.get('user_name', gs.getProperty('x_249975_leave_man.ceo.username')))
+		template.print(grCEO.first_name + ' ' + grCEO.last_name);
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>p.nakov</sys_created_by>
+        <sys_created_on>2018-10-10 07:41:01</sys_created_on>
+        <sys_id>05728239db45638032a7f9971d96194b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LMGetCEOname</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_script_email_05728239db45638032a7f9971d96194b</sys_update_name>
+        <sys_updated_by>p.nakov</sys_updated_by>
+        <sys_updated_on>2018-10-10 07:41:01</sys_updated_on>
+    </sys_script_email>
+</record_update>

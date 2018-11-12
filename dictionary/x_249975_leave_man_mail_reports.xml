@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Mail Reports" max_length="40" name="x_249975_leave_man_mail_reports" type="collection">
+        <element label="Name" max_length="100" name="name" type="string"/>
+    </element>
+</database>

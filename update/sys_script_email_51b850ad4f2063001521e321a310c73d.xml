@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>LMGetLeaveRequestCloser</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+/* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+/* Optional GlideRecord */ event) {
+	
+	
+	// Add CEO as CC
+	var grCEO = new GlideRecord('sys_user');
+	if(gs.getProperty('x_249975_leave_man.user_company_name')) {
+	
+		var grCompany = new GlideRecord('core_company');
+		if(grCompany.get(current.opened_by.company)) {
+
+			if(grCEO.get(grCompany.contact))
+				email.addAddress('cc', grCEO.email.toString());
+		} else {
+			
+			if(grCEO.get('user_name', gs.getProperty('x_249975_leave_man.ceo.username')))
+				email.addAddress('cc', grCEO.email.toString());
+			
+		}
+		
+	} else {
+		
+		if(grCEO.get('user_name', gs.getProperty('x_249975_leave_man.ceo.username')))
+			email.addAddress('cc', grCEO.email.toString());
+	}
+	
+	
+	// Add the HR and Finance Groups as CC
+	var grHRGroup = new GlideRecord('sys_user_group');
+	var grFinanceGroup = new GlideRecord('sys_user_group');
+	
+	if(
+		grHRGroup.get('name', gs.getProperty('x_249975_leave_man.hr.group')) && 
+		grFinanceGroup.get('name', gs.getProperty('x_249975_leave_man.finance.group'))
+	) {
+		
+		email.addAddress('cc', grHRGroup.email.toString());
+		email.addAddress('cc', grFinanceGroup.email.toString());
+	}
+	
+	// Append the mail body with the closer's name
+	var grCloser = new GlideRecord('sys_user');
+	if(grCloser.get('user_name', current.sys_updated_by))
+		template.print('has been closed by ' + grCloser.first_name + ' ' + grCloser.last_name);
+	
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>admin.tihomir.lidanski</sys_created_by>
+        <sys_created_on>2018-09-14 08:48:18</sys_created_on>
+        <sys_id>51b850ad4f2063001521e321a310c73d</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>LMGetLeaveRequestCloser</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_script_email_51b850ad4f2063001521e321a310c73d</sys_update_name>
+        <sys_updated_by>t.lidanski</sys_updated_by>
+        <sys_updated_on>2018-10-02 12:09:52</sys_updated_on>
+    </sys_script_email>
+</record_update>

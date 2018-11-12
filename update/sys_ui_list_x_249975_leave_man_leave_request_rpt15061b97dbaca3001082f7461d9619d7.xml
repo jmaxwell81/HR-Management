@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_249975_leave_man_leave_request" version="2" view="RPT15061b97dbaca3001082f7461d9619d7">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>2f16e052db6d630432a7f9971d961939</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>opened_by</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>a316e052db6d630432a7f9971d96193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>2716e052db6d630432a7f9971d96193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>a716e052db6d630432a7f9971d96193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>leave_type</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>2b16e052db6d630432a7f9971d96193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>leave_sub_type</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>ab16e052db6d630432a7f9971d96193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>date_start</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>2f16e052db6d630432a7f9971d96193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>date_end</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>af16e052db6d630432a7f9971d96193a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>2316e052db6d630432a7f9971d96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>a316e052db6d630432a7f9971d96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>full_name_cyrillic</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>2716e052db6d630432a7f9971d96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="863543ac372123001d41435973990e10">9dd03bd4db112f8032a7f9971d9619ac</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_id>a716e052db6d630432a7f9971d96193b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_249975_leave_man_leave_request</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-05 10:43:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9dd03bd4db112f8032a7f9971d9619ac</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_249975_leave_man_leave_request</sys_name>
+            <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+            <sys_update_name>sys_ui_list_x_249975_leave_man_leave_request_RPT15061b97dbaca3001082f7461d9619d7</sys_update_name>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-05 10:43:13</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt15061b97dbaca3001082f7461d9619d7" name="RPT15061b97dbaca3001082f7461d9619d7">863543ac372123001d41435973990e10</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

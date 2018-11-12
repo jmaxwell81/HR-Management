@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="HR Users Availability " max_length="40" name="x_249975_leave_man_hr_users_availability_" type="collection">
+        <element attributes="import_attribute_name=Days available,edge_encryption_enabled=true" label="Days available" max_length="40" name="u_days_available" type="integer"/>
+        <element attributes="import_attribute_name=Email,edge_encryption_enabled=true" label="Email" max_length="40" name="u_email" type="string"/>
+        <element attributes="import_attribute_name=User,edge_encryption_enabled=true" label="User" max_length="40" name="u_user" type="string"/>
+        <element attributes="import_attribute_name=Year,edge_encryption_enabled=true" label="Year" max_length="40" name="u_year" type="string"/>
+    </element>
+</database>

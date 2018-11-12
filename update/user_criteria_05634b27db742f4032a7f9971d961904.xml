@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="user_criteria">
+    <user_criteria action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <company>8be0380cdb8f328425fdfd051d9619cd,2311c460db5736000b71f3731d9619c3</company>
+        <department/>
+        <group/>
+        <location/>
+        <match_all>false</match_all>
+        <name>Leave Management Users</name>
+        <role/>
+        <script/>
+        <sys_class_name>user_criteria</sys_class_name>
+        <sys_created_by>p.nakov</sys_created_by>
+        <sys_created_on>2018-10-03 12:36:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>05634b27db742f4032a7f9971d961904</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Leave Management Users</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>user_criteria_05634b27db742f4032a7f9971d961904</sys_update_name>
+        <sys_updated_by>p.nakov</sys_updated_by>
+        <sys_updated_on>2018-10-15 10:32:34</sys_updated_on>
+        <user/>
+    </user_criteria>
+</record_update>

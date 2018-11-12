@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="5a2690c44f1023001521e321a310c716" sys_domain="global" table="x_249975_leave_man_leave_request" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>89fa3651dbf4e74032a7f9971d961950</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <text/>
+            <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>process_flow.xml</element>
+            <position>0</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>c1fa3651dbf4e74032a7f9971d961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Process Flow">e64439944f5023001521e321a310c7ee</sys_ui_formatter>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>1</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>cdfa3651dbf4e74032a7f9971d961951</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>2</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>41fa3651dbf4e74032a7f9971d961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opened_by</element>
+            <position>3</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>c1fa3651dbf4e74032a7f9971d961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_start</element>
+            <position>4</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>45fa3651dbf4e74032a7f9971d961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_end</element>
+            <position>5</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>c5fa3651dbf4e74032a7f9971d961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>6</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>49fa3651dbf4e74032a7f9971d961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>7</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>c9fa3651dbf4e74032a7f9971d961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>leave_type</element>
+            <position>8</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>4dfa3651dbf4e74032a7f9971d961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>leave_sub_type</element>
+            <position>9</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>cdfa3651dbf4e74032a7f9971d961952</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>days_requested</element>
+            <position>10</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>41fa3651dbf4e74032a7f9971d961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>days_available</element>
+            <position>11</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>c1fa3651dbf4e74032a7f9971d961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>12</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>45fa3651dbf4e74032a7f9971d961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>full_name_cyrillic</element>
+            <position>13</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>c5fa3651dbf4e74032a7f9971d961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>pid</element>
+            <position>14</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>49fa3651dbf4e74032a7f9971d961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>15</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>c9fa3651dbf4e74032a7f9971d961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>work_notes</element>
+            <position>16</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>5dfa3651dbf4e74032a7f9971d961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>89fa3651dbf4e74032a7f9971d961950</element>
+            <position>17</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-09-26 12:12:28</sys_created_on>
+            <sys_id>ddfa3651dbf4e74032a7f9971d961953</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-09-26 12:12:28</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>lrexist</element>
+            <position>18</position>
+            <sys_created_by>p.nakov</sys_created_by>
+            <sys_created_on>2018-11-07 08:16:51</sys_created_on>
+            <sys_id>8bc7dabedbe1230032a7f9971d96195e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249975_leave_man_leave_request" sys_domain="global" view="Default view">5a2690c44f1023001521e321a310c716</sys_ui_section>
+            <sys_updated_by>p.nakov</sys_updated_by>
+            <sys_updated_on>2018-11-07 08:16:51</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_249975_leave_man_leave_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-28 06:28:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5a2690c44f1023001521e321a310c716</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_249975_leave_man_leave_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+            <sys_update_name>sys_ui_section_5a2690c44f1023001521e321a310c716</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-28 06:28:40</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

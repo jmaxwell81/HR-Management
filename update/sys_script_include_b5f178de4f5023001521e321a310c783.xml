@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_249975_leave_man.LMClientSideUtilities</api_name>
+        <client_callable>true</client_callable>
+        <description>Client side utilities </description>
+        <name>LMClientSideUtilities</name>
+        <script><![CDATA[var LMClientSideUtilities = Class.create();
+LMClientSideUtilities.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	// function returning true/false if a Leave type is a parent type
+	isParentLeaveType: function() {
+		var leavetype = this.getParameter('sysparm_leavetype');
+		var grLeaveType = new GlideRecord('x_249975_leave_man_leave_types');
+		grLeaveType.addQuery('parent', leavetype);
+		grLeaveType.setLimit(1);
+		grLeaveType.query();
+		if(grLeaveType.hasNext()) {
+			return true;
+		}
+		return false;
+	},
+	
+	// function returning number of workdays between two Dates, taken from user schedule
+	getRequestedDaysAjax: function() {
+		var dtStart = this.getParameter('sysparm_date_start')+ ' 00:00:00';
+		var dtEnd = this.getParameter('sysparm_date_end')+ ' 00:00:00';
+		var systemDefaultDateFormat = gs.getProperty('glide.sys.date_format');
+		//'dd/MM/yyyy HH:mm:ss' - testing setValueUTC format
+		var gdStartDate = new GlideDateTime(dtStart);
+		gdStartDate.setValueUTC(dtStart, systemDefaultDateFormat);
+		var gdEndDate = new GlideDateTime(dtEnd);
+		gdEndDate.setValueUTC(dtEnd, systemDefaultDateFormat);
+		return getRequestedDaysBySchedule (gdStartDate, gdEndDate);
+	},
+	
+	// function returning current user's leave availability
+	getUserID: function() {
+		var totalDays = 0;
+		var userID = this.getParameter('sysparm_user');
+		var gADaysAvl = new GlideAggregate('x_249975_leave_man_leave_availability');
+		gADaysAvl.addQuery('user', userID);
+		gADaysAvl.addAggregate('SUM', 'days_available');
+		gADaysAvl.groupBy('user.sys_id');
+		gADaysAvl.query();
+		while(gADaysAvl.next()) {
+			totalDays = gADaysAvl.getAggregate('SUM','days_available');
+		}
+		return totalDays;
+	},
+	// get dates from types table for a sub-type
+	getSubTypeDays: function() {
+		var subType = this.getParameter('sysparm_subtype');
+		var grsubTypeDay = new GlideRecord('x_249975_leave_man_leave_types');
+		grsubTypeDay.addQuery('sys_id', subType);
+		grsubTypeDay.query();
+		if(grsubTypeDay.next()){
+			return grsubTypeDay.days;
+		}
+	},
+	// get last typed cyrilic name in form for user
+	getLastCyrillicName: function() {
+		var userID = this.getParameter('sysparm_userId');
+		var grLeaveReq = new GlideRecord('x_249975_leave_man_leave_request');
+		grLeaveReq.addQuery('opened_by', userID);
+		grLeaveReq.setLimit(1);
+		grLeaveReq.orderByDesc('sys_created_on');
+		grLeaveReq.query();
+		
+		if(grLeaveReq.next())
+			return grLeaveReq.full_name_cyrillic;
+	},
+	// check if there any on pending approval or closed leave requests to a certaion user, avoid overlapping of leave absences
+	isPendingLeaveReq: function() {
+		
+		if (gs.getProperty("x_249975_leave_man.multiple_open_requests") == 'false'
+			&& this.getParameter('sysparm_leavetype') == gs.getProperty("x_249975_leave_man.PaidAnnualLeave")
+		){
+			//97be76cfdbe4a70032a7f9971d961920 = paid annual leave
+			var systemDefaultDateFormat = gs.getProperty('glide.sys.date_format');
+			var paidLeaveRequestType = gs.getProperty("x_249975_leave_man.PaidAnnualLeave");
+			var userID = this.getParameter('sysparm_user');
+			var startDate = this.getParameter('sysparm_start')+ ' 00:00:00';
+			var endDate = this.getParameter('sysparm_end')+ ' 00:00:00';
+			
+			
+			var gdStartDate = new GlideDateTime(startDate);
+			gdStartDate.setValueUTC(startDate, systemDefaultDateFormat);
+			var gdStartDateNum = gdStartDate.getNumericValue();
+			
+			var gdEndDate = new GlideDateTime(endDate);
+			gdEndDate.setValueUTC(endDate, systemDefaultDateFormat);
+			var gdEndDateNum = gdEndDate.getNumericValue();
+			var grOpenedLReq = new GlideRecord('x_249975_leave_man_leave_request');
+			grOpenedLReq.addQuery('opened_by',userID);
+			grOpenedLReq.addQuery('state','IN','100,3');
+			grOpenedLReq.addQuery('leave_type',paidLeaveRequestType);
+			//states 100 - waiting for approval , state 3 - closed completed
+			grOpenedLReq.query();
+			while(grOpenedLReq.next()) {
+				var exStartDate = grOpenedLReq.date_start.toString() + ' 00:00:00';
+				var exgdStartDate = new GlideDateTime(exStartDate);
+				var exgdStartDateNum = exgdStartDate.getNumericValue();
+				
+				var exEndDate = grOpenedLReq.date_end.toString() + ' 00:00:00';
+				var exgdEndDate = new GlideDateTime(exEndDate);
+				var exgdEndDateNum = exgdEndDate.getNumericValue();
+				
+				//if(gdStartDate >= exgdStartDate && gdEndDate <= exgdEndDate)
+				if(gdStartDateNum >= exgdStartDateNum && gdEndDateNum <= exgdEndDateNum)	{
+					return false;
+				}
+				else
+					//if(gdStartDate >= exgdStartDate && gdStartDate <= exgdEndDate)
+				if(gdStartDateNum >= exgdStartDateNum && gdStartDateNum <= exgdEndDateNum ) {
+					return false;
+				}
+				else
+					//if(gdStartDate <= exgdStartDate && gdEndDate >= exgdStartDate)
+				if(gdStartDateNum <= exgdStartDateNum && gdEndDateNum >= exgdStartDateNum)  {
+					return false;
+				}
+				
+			}
+			return true;
+		}
+	},
+	// validate start and end date in leave request
+	compareDates: function () {
+		try {
+			var startDateClient = this.getParameter('sysparm_date_start');
+			var endDateClient =  this.getParameter('sysparm_date_end');
+			var systemDefaultDateFormat = gs.getProperty('glide.sys.date_format');
+			
+			
+			var startDate = new GlideDateTime(startDateClient);
+			startDate.setValueUTC(startDateClient, systemDefaultDateFormat);
+			var startDateNum = startDate.getNumericValue();
+			
+			var endDate = new GlideDateTime(endDateClient);
+			endDate.setValueUTC(endDateClient, systemDefaultDateFormat);
+			var endDateNum = endDate.getNumericValue();
+			
+			var result = [];
+			result.push(startDateNum);
+			result.push(endDateNum);
+			var jsonresults = JSON.stringify(result);
+			return jsonresults;
+			
+		} catch (err) {
+			//	gs.info("GSH ERROR - " + err);
+		}
+		
+	},
+	
+	//get user email
+	getUserEmail: function () {
+		var gr = new GlideRecord('sys_user');
+		gr.get(this.getParameter('sysparm_user_id'));
+		var result = this.newItem('user');
+		result.setAttribute('email', gr.email + '');
+		return result;
+	},
+	
+	type: 'LMClientSideUtilities'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin.georgi.shishkov</sys_created_by>
+        <sys_created_on>2018-09-04 08:19:12</sys_created_on>
+        <sys_id>b5f178de4f5023001521e321a310c783</sys_id>
+        <sys_mod_count>269</sys_mod_count>
+        <sys_name>LMClientSideUtilities</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_script_include_b5f178de4f5023001521e321a310c783</sys_update_name>
+        <sys_updated_by>p.nakov</sys_updated_by>
+        <sys_updated_on>2018-11-09 13:41:03</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_249975_leave_man_leave_request" version="2" view="RPTf4c198acdb196bc01082f7461d96194d">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="ce3543ac372123001d41435973990e2b">bcc190ecdb196bc01082f7461d9619a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>LMTestFinance</sys_created_by>
+            <sys_created_on>2018-10-18 12:29:13</sys_created_on>
+            <sys_id>34c190ecdb196bc01082f7461d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LMTestFinance</sys_updated_by>
+            <sys_updated_on>2018-10-18 12:29:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>opened_by</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="ce3543ac372123001d41435973990e2b">bcc190ecdb196bc01082f7461d9619a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>LMTestFinance</sys_created_by>
+            <sys_created_on>2018-10-18 12:29:13</sys_created_on>
+            <sys_id>b4c190ecdb196bc01082f7461d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LMTestFinance</sys_updated_by>
+            <sys_updated_on>2018-10-18 12:29:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="ce3543ac372123001d41435973990e2b">bcc190ecdb196bc01082f7461d9619a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>LMTestFinance</sys_created_by>
+            <sys_created_on>2018-10-18 12:29:13</sys_created_on>
+            <sys_id>38c190ecdb196bc01082f7461d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LMTestFinance</sys_updated_by>
+            <sys_updated_on>2018-10-18 12:29:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>leave_type</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="ce3543ac372123001d41435973990e2b">bcc190ecdb196bc01082f7461d9619a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>LMTestFinance</sys_created_by>
+            <sys_created_on>2018-10-18 12:29:13</sys_created_on>
+            <sys_id>b8c190ecdb196bc01082f7461d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LMTestFinance</sys_updated_by>
+            <sys_updated_on>2018-10-18 12:29:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>date_start</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="ce3543ac372123001d41435973990e2b">bcc190ecdb196bc01082f7461d9619a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>LMTestFinance</sys_created_by>
+            <sys_created_on>2018-10-18 12:29:13</sys_created_on>
+            <sys_id>3cc190ecdb196bc01082f7461d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LMTestFinance</sys_updated_by>
+            <sys_updated_on>2018-10-18 12:29:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>date_end</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="ce3543ac372123001d41435973990e2b">bcc190ecdb196bc01082f7461d9619a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>LMTestFinance</sys_created_by>
+            <sys_created_on>2018-10-18 12:29:13</sys_created_on>
+            <sys_id>bcc190ecdb196bc01082f7461d9619a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LMTestFinance</sys_updated_by>
+            <sys_updated_on>2018-10-18 12:29:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="ce3543ac372123001d41435973990e2b">bcc190ecdb196bc01082f7461d9619a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>LMTestFinance</sys_created_by>
+            <sys_created_on>2018-10-18 12:29:13</sys_created_on>
+            <sys_id>30c190ecdb196bc01082f7461d9619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LMTestFinance</sys_updated_by>
+            <sys_updated_on>2018-10-18 12:29:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="x_249975_leave_man_leave_request" element="NULL" name="x_249975_leave_man_leave_request" parent="NULL" relationship="NULL" sys_domain="global" view="ce3543ac372123001d41435973990e2b">bcc190ecdb196bc01082f7461d9619a0</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>LMTestFinance</sys_created_by>
+            <sys_created_on>2018-10-18 12:29:13</sys_created_on>
+            <sys_id>b0c190ecdb196bc01082f7461d9619a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LMTestFinance</sys_updated_by>
+            <sys_updated_on>2018-10-18 12:29:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_249975_leave_man_leave_request</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>LMTestFinance</sys_created_by>
+            <sys_created_on>2018-10-18 12:29:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bcc190ecdb196bc01082f7461d9619a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_249975_leave_man_leave_request</sys_name>
+            <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+            <sys_update_name>sys_ui_list_x_249975_leave_man_leave_request_RPTf4c198acdb196bc01082f7461d96194d</sys_update_name>
+            <sys_updated_by>LMTestFinance</sys_updated_by>
+            <sys_updated_on>2018-10-18 12:29:13</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptf4c198acdb196bc01082f7461d96194d" name="RPTf4c198acdb196bc01082f7461d96194d">ce3543ac372123001d41435973990e2b</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Default access control on x_249975_leave_man_mail_reports</description>
+        <name>x_249975_leave_man_mail_reports</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[var companyArr = gs.getProperty('x_249975_leave_man.company').split(', ');
+var id = gs.getUserID();
+var grUser = new GlideRecord('sys_user');
+if(grUser.get(id)) {
+
+	answer = (companyArr.indexOf(grUser.getDisplayValue('company')) != -1);
+}]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin.tihomir.lidanski</sys_created_by>
+        <sys_created_on>2018-09-18 14:04:45</sys_created_on>
+        <sys_id>3be7c2fa4f6423001521e321a310c73a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_249975_leave_man_mail_reports</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_security_acl_3be7c2fa4f6423001521e321a310c73a</sys_update_name>
+        <sys_updated_by>t.lidanski</sys_updated_by>
+        <sys_updated_on>2018-10-03 11:32:08</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

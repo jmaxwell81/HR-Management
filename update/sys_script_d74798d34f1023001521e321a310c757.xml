@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_249975_leave_man_leave_request</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_249975_leave_man_leave_request">state=3^sys_updated_byNSAMEASsys_created_by^NQstate=3^leave_type.required_approval=false^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+            <item endquery="false" field="sys_updated_by" goto="false" newquery="false" operator="NSAMEAS" or="false" value="sys_created_by"/>
+            <item endquery="false" field="state" goto="false" newquery="true" operator="=" or="false" value="3"/>
+            <item endquery="false" field="leave_type.required_approval" goto="false" newquery="false" operator="=" or="false" value="false"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>LM - Generate PDF Leave Order</name>
+        <order>550</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var content = '';
+// 	creationDate = current.sys_created_on;
+// 	var gdTime = new GlideDateTime(creationDate);
+// 	var currentDate = gdTime.getLocalDate();
+// 	var currentTime = gdTime.getUserFormattedLocalTime();
+	var dateStart = current.date_start;
+	var dateEnd = current.date_end;
+	
+	var pdfUtils = new LeaveManagementPDFServerUtils();
+	var params = {
+		sourceTable: current.sys_class_name,
+		sourceID: current.sys_id,
+		templateTable: "u_general_document_template",
+		templateName: "Leave Order PDF",
+		user: current.opened_by
+	};
+	
+	content = pdfUtils.getDocumentBody(params);
+	
+	if (content){
+		setDocument(content);
+		
+		//var datestr =  currentDate + currentTime;
+		var datestr = dateStart + dateEnd;
+		datestr = datestr.replace(/([: -])+/g,'');
+		
+		var gdf = new global.GeneralDocFormv2(
+		"Leave Order PDF",
+		current.sys_class_name,
+		current.sys_id,
+		current.opened_by.getDisplayValue() + " Leave Order" +datestr+'.pdf'
+		);
+		gdf.generate();
+	}
+	
+	function setDocument(content){
+		params.documentBody = content;
+		params.table_name = current.sys_class_name;
+		params.table_id = current.sys_id;
+		params.targetId = "8cc48303db64a3001082f7461d961913";
+		params.targetTable = "u_general_document_template";
+		params.user = current.opened_by;
+		
+		pdfUtils.setDocumentBody(params);
+		
+	}
+	
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin.tihomir.lidanski</sys_created_by>
+        <sys_created_on>2018-09-07 08:55:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d74798d34f1023001521e321a310c757</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>LM - Generate PDF Leave Order</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_script_d74798d34f1023001521e321a310c757</sys_update_name>
+        <sys_updated_by>p.nakov</sys_updated_by>
+        <sys_updated_on>2018-11-05 15:53:22</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=d74798d34f1023001521e321a310c757"/>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>create</operation>
+        <source_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin.tihomir.lidanski</sys_created_by>
+        <sys_created_on>2018-09-04 11:23:55</sys_created_on>
+        <sys_id>abdc119e4f1423001521e321a310c743</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>draft_document</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_scope_privilege_abdc119e4f1423001521e321a310c743</sys_update_name>
+        <sys_updated_by>admin.tihomir.lidanski</sys_updated_by>
+        <sys_updated_on>2018-09-04 11:23:55</sys_updated_on>
+        <target_name>draft_document</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>sys_db_object</target_type>
+    </sys_scope_privilege>
+</record_update>

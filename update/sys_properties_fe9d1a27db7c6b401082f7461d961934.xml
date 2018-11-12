@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Comma-separated list of company names that can access the module.</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_249975_leave_man.company</name>
+        <read_roles/>
+        <suffix>company</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>t.lidanski</sys_created_by>
+        <sys_created_on>2018-10-03 09:57:00</sys_created_on>
+        <sys_id>fe9d1a27db7c6b401082f7461d961934</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_249975_leave_man.company</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_properties_fe9d1a27db7c6b401082f7461d961934</sys_update_name>
+        <sys_updated_by>t.lidanski</sys_updated_by>
+        <sys_updated_on>2018-10-03 09:57:00</sys_updated_on>
+        <type>string</type>
+        <value>BGSOFNAXEX, BGRSOFNAXEX</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=fe9d1a27db7c6b401082f7461d961934"/>
+</record_update>

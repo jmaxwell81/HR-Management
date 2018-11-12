@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices>true/false</choices>
+        <description>A property to allow multiple simultaneous Paid/Unpaid requests for a single person</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_249975_leave_man.multiple_open_requests</name>
+        <read_roles/>
+        <suffix>multiple_open_requests</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-31 06:32:37</sys_created_on>
+        <sys_id>51d3bf304f1023001521e321a310c723</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>x_249975_leave_man.multiple_open_requests</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_properties_51d3bf304f1023001521e321a310c723</sys_update_name>
+        <sys_updated_by>p.nakov</sys_updated_by>
+        <sys_updated_on>2018-10-17 11:59:05</sys_updated_on>
+        <type>boolean</type>
+        <value>false</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=51d3bf304f1023001521e321a310c723"/>
+</record_update>

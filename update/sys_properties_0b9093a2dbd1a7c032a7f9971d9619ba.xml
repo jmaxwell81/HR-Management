@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Property for paid annaul leave, used as variable to prevent overlaping  for leave requests</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_249975_leave_man.PaidAnnualLeave</name>
+        <read_roles/>
+        <suffix>PaidAnnualLeave</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>p.nakov</sys_created_by>
+        <sys_created_on>2018-10-25 07:36:58</sys_created_on>
+        <sys_id>0b9093a2dbd1a7c032a7f9971d9619ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_249975_leave_man.PaidAnnualLeave</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_properties_0b9093a2dbd1a7c032a7f9971d9619ba</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-10-31 13:03:27</sys_updated_on>
+        <type>string</type>
+        <value>b0e8cbe4376123001d41435973990e4e</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=0b9093a2dbd1a7c032a7f9971d9619ba"/>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_249975_leave_man_leave_request">state=100^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="100"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Awaiting Approval</label>
+        <name>Awaiting Approval</name>
+        <order>200</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-29 07:59:40</sys_created_on>
+        <sys_id>6f4439144f5023001521e321a310c772</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Awaiting Approval</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_process_flow_6f4439144f5023001521e321a310c772</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-12 09:42:43</sys_updated_on>
+        <table>x_249975_leave_man_leave_request</table>
+    </sys_process_flow>
+</record_update>

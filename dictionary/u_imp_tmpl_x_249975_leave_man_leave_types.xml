@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 249975 Leave Man Leave Types" max_length="40" name="u_imp_tmpl_x_249975_leave_man_leave_types" type="collection">
+        <element attributes="import_attribute_name=Days" label="Days" max_length="40" name="u_days" type="integer"/>
+        <element attributes="import_attribute_name=Leave Type Cyrillic,edge_encryption_enabled=true" label="Leave Type Cyrillic" max_length="60" name="u_leave_type_cyrillic" type="string"/>
+        <element attributes="import_attribute_name=Name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=Order" label="Order" max_length="40" name="u_order" type="integer"/>
+        <element attributes="import_attribute_name=Parent,edge_encryption_enabled=true" label="Parent" max_length="32" name="u_parent" type="string"/>
+    </element>
+</database>

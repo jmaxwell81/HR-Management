@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_249975_leave_man_mail_reports" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_249975_leave_man_mail_reports" element="NULL" name="x_249975_leave_man_mail_reports" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">518212364fa423001521e321a310c784</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin.tihomir.lidanski</sys_created_by>
+            <sys_created_on>2018-09-18 14:51:00</sys_created_on>
+            <sys_id>9d8212364fa423001521e321a310c784</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin.tihomir.lidanski</sys_updated_by>
+            <sys_updated_on>2018-09-18 14:51:00</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_249975_leave_man_mail_reports</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin.tihomir.lidanski</sys_created_by>
+            <sys_created_on>2018-09-18 14:51:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>518212364fa423001521e321a310c784</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_249975_leave_man_mail_reports</sys_name>
+            <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+            <sys_update_name>sys_ui_list_x_249975_leave_man_mail_reports_null</sys_update_name>
+            <sys_updated_by>admin.tihomir.lidanski</sys_updated_by>
+            <sys_updated_on>2018-09-18 14:51:00</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

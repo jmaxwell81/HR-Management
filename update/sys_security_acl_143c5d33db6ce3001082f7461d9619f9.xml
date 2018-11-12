@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <condition/>
+        <description>Allow write for state in x_249975_leave_man_leave_request, if the ACL script returns true.</description>
+        <name>x_249975_leave_man_leave_request.state</name>
+        <operation display_value="write">write</operation>
+        <script><![CDATA[var companyArr = gs.getProperty('x_249975_leave_man.company').split(', ');
+var id = gs.getUserID();
+
+var grUser = new GlideRecord('sys_user');
+if(grUser.get(id)) {
+	if (current.isNewRecord() && companyArr.indexOf(grUser.getDisplayValue('company')) != -1) {
+		var answer = true;
+	} else {
+		answer = false;
+	}
+}]]></script>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>t.lidanski</sys_created_by>
+        <sys_created_on>2018-09-21 13:28:53</sys_created_on>
+        <sys_id>143c5d33db6ce3001082f7461d9619f9</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>x_249975_leave_man_leave_request.state</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_security_acl_143c5d33db6ce3001082f7461d9619f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-11-01 11:43:49</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

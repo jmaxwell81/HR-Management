@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>The name of the finance group in the leave management app</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_249975_leave_man.finance.group</name>
+        <read_roles/>
+        <suffix>finance.group</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin.tihomir.lidanski</sys_created_by>
+        <sys_created_on>2018-09-03 10:21:28</sys_created_on>
+        <sys_id>1e7308ce4f9023001521e321a310c708</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_249975_leave_man.finance.group</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_properties_1e7308ce4f9023001521e321a310c708</sys_update_name>
+        <sys_updated_by>t.lidanski</sys_updated_by>
+        <sys_updated_on>2018-09-21 10:13:30</sys_updated_on>
+        <type>string</type>
+        <value>Leave Management Finance Group</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=1e7308ce4f9023001521e321a310c708"/>
+</record_update>

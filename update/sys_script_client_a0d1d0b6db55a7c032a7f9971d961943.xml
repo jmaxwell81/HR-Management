@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>prevent multiple submission of paid annual leave requests</description>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>LM - Prevent multple paid requests</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	var currentUserID = g_user.userID;
+	var start_date = g_form.getValue('date_start');
+	var end_date = g_form.getValue('date_end');
+	var leave_type = g_form.getValue('leave_type');
+	
+	var gaPendingLReq = new GlideAjax('LMClientSideUtilities');
+	gaPendingLReq.addParam('sysparm_name', 'isPendingLeaveReq');
+	gaPendingLReq.addParam('sysparm_start',start_date);
+	gaPendingLReq.addParam('sysparm_end',end_date);
+	gaPendingLReq.addParam('sysparm_leavetype',leave_type);
+	gaPendingLReq.addParam('sysparm_user', currentUserID);
+	gaPendingLReq.getXML(leaveCallback);
+	function leaveCallback(response) {
+		var answer = response.responseXML.documentElement.getAttribute("answer");
+		if(answer == 'false' ) {
+			alert('You have already paid leave request within that period! You will be redirected back to the form!');
+			
+			return false;
+		}
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>p.nakov</sys_created_by>
+        <sys_created_on>2018-10-25 12:18:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a0d1d0b6db55a7c032a7f9971d961943</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>LM - Prevent multple paid requests</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_script_client_a0d1d0b6db55a7c032a7f9971d961943</sys_update_name>
+        <sys_updated_by>p.nakov</sys_updated_by>
+        <sys_updated_on>2018-11-07 12:33:50</sys_updated_on>
+        <table>x_249975_leave_man_leave_request</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

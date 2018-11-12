@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_249975_leave_man_radio.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+<input type="radio" name="status" id="single" style="text-align:left"> Single</input>
+<input type="radio" name="status" id="married"> Married</input>
+<input type="radio" name="status" id="married_but"> Married, but withhold at higher Single rate.</input>
+</j:jelly>]]></html>
+        <name>radio</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-18 07:03:35</sys_created_on>
+        <sys_id>56272c7a4f2023001521e321a310c772</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>radio</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_ui_page_56272c7a4f2023001521e321a310c772</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-18 07:03:35</sys_updated_on>
+    </sys_ui_page>
+</record_update>

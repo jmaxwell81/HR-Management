@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Submit a Leave Request">bbc1ec4d4f9023001521e321a310c79f</cat_item>
+        <cat_variable>IO:1c3a68c54fd023001521e321a310c729</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>LM - Calculate days on Date end change</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+	if (isLoading || newValue == '') {
+		return;
+	}
+	var ga = new GlideAjax('LMClientSideUtilities');
+		ga.addParam('sysparm_name', 'getRequestedDaysAjax');
+		ga.addParam('sysparm_date_start', g_form.getValue('date_start'));
+		ga.addParam('sysparm_date_end', g_form.getValue('date_end'));
+		ga.getXML(leaveCallback);
+	
+	function leaveCallback(response) {
+		var intDays = parseInt(response.responseXML.documentElement.getAttribute("answer"));
+		
+		// populate the days_requested field!
+		intDays = (isNaN(intDays) ? '':intDays);
+ 		g_form.setValue('days_requested',intDays+'');
+	}
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin.georgi.shishkov</sys_created_by>
+        <sys_created_on>2018-09-03 11:19:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b722188a4fd023001521e321a310c7c7</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>LM - Calculate days on Date end change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>catalog_script_client_b722188a4fd023001521e321a310c7c7</sys_update_name>
+        <sys_updated_by>p.nakov</sys_updated_by>
+        <sys_updated_on>2018-10-22 13:12:11</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>1</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

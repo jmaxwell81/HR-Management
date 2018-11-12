@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>email</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>p.nakov</sys_created_by>
+        <sys_created_on>2018-10-11 06:27:59</sys_created_on>
+        <sys_id>b4ebf64adb81e38032a7f9971d96195d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>email</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b4ebf64adb81e38032a7f9971d96195d</sys_update_name>
+        <sys_updated_by>p.nakov</sys_updated_by>
+        <sys_updated_on>2018-10-23 09:59:03</sys_updated_on>
+        <table>x_249975_leave_man_leave_availability</table>
+        <ui_policy display_value="LM - Set read-only to email field ">9acbb24adb81e38032a7f9971d9619cb</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

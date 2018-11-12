@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin.tihomir.lidanski</sys_created_by>
+        <sys_created_on>2018-09-11 09:57:13</sys_created_on>
+        <sys_id>7d2cc9e44fa023001521e321a310c70a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GlideRecord.deleteMultiple</sys_name>
+        <sys_package display_value="Leave Management" source="x_249975_leave_man">2eace0b74f0423001521e321a310c7cb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Leave Management">2eace0b74f0423001521e321a310c7cb</sys_scope>
+        <sys_update_name>sys_scope_privilege_7d2cc9e44fa023001521e321a310c70a</sys_update_name>
+        <sys_updated_by>admin.tihomir.lidanski</sys_updated_by>
+        <sys_updated_on>2018-09-11 09:57:13</sys_updated_on>
+        <target_name>GlideRecord.deleteMultiple</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

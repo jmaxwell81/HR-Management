@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="User Data" max_length="40" name="x_249975_leave_man_user_data" type="collection">
+        <element label="Cyrillic Name" max_length="40" name="cyrillic_name" type="string"/>
+        <element label="GUID" max_length="40" name="guid" type="string"/>
+        <element label="Position (Cyrillic)" max_length="40" name="position_cyrillic" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>
